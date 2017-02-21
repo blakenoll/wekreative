@@ -1,0 +1,19 @@
+---
+---
+
+@import 'materialize';
+
+$gold: #DAAA00;
+$navy: #0C2340;
+$white: #ffffff;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
