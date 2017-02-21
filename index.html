@@ -1,12 +1,25 @@
 ---
 layout: default
 ---
+<div id="menu" class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center"><img id="nav-logo" src="{{ "/static1.squarespace.png" | prepend: site.url }}" alt=""></a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
 <div class="parallax-container">
     <div class="parallax"><img src="https://images.unsplash.com/photo-1465323591784-cdf2503fb5df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=15f18325cf86ad7a334d2e6cedee0711">
     </div>
     <div class="container">
       <br>
-      <div class="row">
+      <div  id="home" class="row section scrollspy">
   <div class="col s12 m6 offset-m3">
     <div class="card-panel">
       <img src="{{ "/static1.squarespace.png" | prepend: site.url }}" alt="" width="100%">
@@ -94,7 +107,32 @@ whether you have a logo that strongly represents you or you need a complete desi
 
   <script type="text/javascript">
   $(document).ready(function(){
-  $('.parallax').parallax();
-  $('.scrollspy').scrollSpy();
+    $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+
   });
+  </script>
+
+  <script type="text/javascript">
+  (function ($) {
+$(document).ready(function(){
+
+  // hide .navbar first
+  $('#menu').hide();
+
+  // fade in .navbar
+  $(function () {
+      $(window).scroll(function () {
+
+               // set distance user needs to scroll before we start fadeIn
+          if ($(this).scrollTop() > 450) {
+              $('#menu').fadeIn();
+          } else {
+              $('#menu').fadeOut();
+          }
+      });
+  });
+
+});
+}(jQuery));
   </script>
