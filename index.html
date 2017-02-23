@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div id="menu" class="navbar-fixed">
 <nav>
   <div class="nav-wrapper">
@@ -43,14 +44,59 @@ layout: default
     </div>
 </div>
   <div class="section white">
+<div id="work" class="section scrollspy">
     <div class="row container">
-      <div id="work" class="section scrollspy">
+
       <h2  class="header">Work</h2>
-      <p class="grey-text text-darken-3 lighten-3 flow-text">the key to successful branding is to express yourself in a way that looks, feels, and speaks exactly like you do. strong visual presence and clear communication are essential to create a consistent and cohesive message.
+      <p class="grey-text text-darken-3 lighten-3">the key to successful branding is to express yourself in a way that looks, feels, and speaks exactly like you do. strong visual presence and clear communication are essential to create a consistent and cohesive message.
 whether you have a logo that strongly represents you or you need a complete design overhaul - let wekreative take your vision to the next level. our brand development package will give you the tools you need to look as good as you are.</p>
-     </div>
-    </div>
   </div>
+    {% include slider.html %}
+    <br>
+    <div class="row container">
+    <div class="row">
+      <div class="col s12">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     </div>
+  </div>
+</div>
   <div class="parallax-container">
     <div class="parallax"><img src="https://source.unsplash.com/random"></div>
   </div>
@@ -101,35 +147,3 @@ whether you have a logo that strongly represents you or you need a complete desi
      </div>
     </div>
   </div>
-
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $('.parallax').parallax();
-    $('.scrollspy').scrollSpy();
-
-  });
-  </script>
-
-  <script type="text/javascript">
-  (function ($) {
-$(document).ready(function(){
-
-  // hide .navbar first
-  $('#menu').hide();
-
-  // fade in .navbar
-  $(function () {
-      $(window).scroll(function () {
-
-               // set distance user needs to scroll before we start fadeIn
-          if ($(this).scrollTop() > 450) {
-              $('#menu').fadeIn(500);
-          } else {
-              $('#menu').fadeOut(500);
-          }
-      });
-  });
-
-});
-}(jQuery));
-  </script>
