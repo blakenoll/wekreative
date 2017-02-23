@@ -2,19 +2,7 @@
 layout: default
 ---
 
-<div id="menu" class="navbar-fixed">
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo center"><img id="nav-logo" src="{{ "/static1.squarespace.png" | prepend: site.url }}" alt=""></a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down section table-of-contents">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-</div>
+{% include nav.html %}
 <div class="parallax-container">
     <div class="parallax"><img src="https://images.unsplash.com/photo-1465323591784-cdf2503fb5df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=15f18325cf86ad7a334d2e6cedee0711">
     </div>
@@ -112,38 +100,4 @@ whether you have a logo that strongly represents you or you need a complete desi
   <div class="parallax-container" style="height: 200px">
     <div class="parallax"><img src="https://source.unsplash.com/random"></div>
   </div>
-  <div class="section white">
-    <div class="row container">
-      <div id="contact" class="section scrollspy">
-      <h2  class="header">Contact</h2>
-      <div class="row">
-   <form class="col s12">
-     <div class="row">
-       <div class="input-field col s4">
-         <i class="material-icons prefix">account_circle</i>
-         <input id="icon_prefix" type="text" class="validate">
-         <label for="icon_prefix">Name</label>
-       </div>
-       <div class="input-field col s4">
-         <i class="material-icons prefix">email</i>
-         <input id="email" type="email" class="validate">
-         <label for="email">Email</label>
-       </div>
-       <div class="input-field col s4">
-         <i class="material-icons prefix">mode_edit</i>
-         <input id="subject" type="text" class="validate">
-         <label for="subject">Subject</label>
-       </div>
-       <div class="input-field col s12">
-  <textarea id="textarea1" class="materialize-textarea"></textarea>
-  <label for="textarea1">Message</label>
-</div>
-<button class="btn-flat waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-     </div>
-   </form>
- </div>
-     </div>
-    </div>
-  </div>
+  {% include contact.html %}

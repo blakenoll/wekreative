@@ -20,8 +20,8 @@
     display: inline-block;
 
     &:hover {
-      color: lighten(#757575, 20%);
-      padding-left: 19px;
+
+      padding-left: 20px;
       border-bottom: 2px solid $primary-color;
     }
     &.active {
