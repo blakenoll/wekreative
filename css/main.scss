@@ -43,6 +43,11 @@ footer {
   font-weight: 700;
 }
 
+.icons img {
+  display: block;
+  margin: auto;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -67,4 +72,15 @@ footer {
 .table-of-contents a:hover {
   color: $gold;
   border-bottom: none;
+}
+
+.black h1 {
+  padding-top: 2rem;
+}
+
+.black p {
+  padding-bottom: 2rem;
+  font-size: large;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
