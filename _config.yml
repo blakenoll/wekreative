@@ -1,12 +1,9 @@
 
 title: wekreative
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: hello@wekreative.com
+description: WEKREATIVE is a full-service marketing firm providing creative solutions for businesses and organization around the globe. Nothing is more exciting to our team than coming alongside a group of people to help identify what makes them unique, and then helping them share that story through multiple mediums. Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity. WEKREATIVE specializes in pushing the status quo and creating awe-inspired results.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://blakenoll.github.io/wekreative/
+url: wekreative.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
