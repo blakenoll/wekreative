@@ -20,9 +20,9 @@ $(function () {
 
              // set distance user needs to scroll before we start fadeIn
         if ($(this).scrollTop() > 400) {
-            $('#menu').fadeIn(500);
+            $('#menu').fadeIn(550);
         } else {
-            $('#menu').fadeOut(500);
+            $('#menu').fadeOut(550);
         }
     });
 });

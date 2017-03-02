@@ -18,8 +18,9 @@ main {
   flex: 1 0 auto;
 }
 
-footer {
+footer.page-footer {
   color: #000;
+  background-color: #EAEAEA;
 }
 
 #nav-logo {
@@ -57,6 +58,14 @@ footer {
   transition: opacity 0.5s ease-in-out;
 }
 
+#grey {
+  background-color: #EAEAEA;
+}
+
+#grey-row {
+  margin-bottom: 0px;
+}
+
 .get-kreative {
   padding-top: 0rem;
 }
@@ -77,6 +86,7 @@ img.top:hover {
 .parallax-container {
      height: 500px;
    }
+
 .card {
   box-shadow: none;
 }
@@ -106,4 +116,16 @@ img.top:hover {
   font-size: large;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.card {
+  background: transparent;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+footer.page-footer .footer-copyright {
+  background-color: #EAEAEA;
 }
