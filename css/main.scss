@@ -85,7 +85,11 @@ img.top:hover {
 
 .parallax-container {
      height: 500px;
-   }
+}
+
+.parallax-top {
+  position: fixed;
+}
 
 .card {
   box-shadow: none;
