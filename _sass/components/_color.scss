@@ -332,7 +332,7 @@ $grey: (
 );
 
 $shades: (
-  "black":        #000000,
+  "black":        #161616,
   "white":        #FFFFFF,
   "transparent":  transparent
 );
@@ -409,4 +409,3 @@ $colors: (
   @warn "Unknown `#{name}` in $colors.";
   @return null;
 }
-
