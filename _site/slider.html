@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>wekreative</title>
+  <meta name="author" content="">
+  <meta name="description" content="WEKREATIVE is a full-service marketing firm providing creative solutions for businesses and organization around the globe. Nothing is more exciting to our team than coming alongside a group of people to help identify what makes them unique, and then helping them share that story through multiple mediums. Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity. WEKREATIVE specializes in pushing the status quo and creating awe-inspired results.">
+  <meta property="og:title" content="wekreative">
+  <meta property="og:url" content="http://localhost:4000/slider.html">
+  <meta property="og:site_name" content="wekreative">
+  <meta property="og:description" content="WEKREATIVE is a full-service marketing firm providing creative solutions for businesses and organization around the globe. Nothing is more exciting to our team than coming alongside a group of people to help identify what makes them unique, and then helping them share that story through multiple mediums. Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity. WEKREATIVE specializes in pushing the status quo and creating awe-inspired results.">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="blog">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="WEKREATIVE is a full-service marketing firm providing creative solutions for businesses and organization around the globe. Nothing is more exciting to our team than coming alongside a group of people to help identify what makes them unique, and then helping them share that story through multiple mediums. Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity. WEKREATIVE specializes in pushing the status quo and creating awe-inspired results.">
+  <meta name="twitter:title" content="wekreative">
+  <meta name="twitter:url" content="http://localhost:4000/slider.html">
+  <meta name="twitter:site" content="wekreative">
+  <meta name="twitter:creator" content="@jekyllrb">
+  <meta name="twitter:domain" content="http://localhost:4000">
+  <meta property="twitter:image" content="">
+  <!-- Fonts and Icons -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+  <!-- main css -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="alternate" type="application/rss+xml" title="wekreative" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/slider.html">
+
+  <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png">
+
+</head>
+
+  <body>
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-92996307-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    
+    <!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://localhost:4000/js/materialize.min.js"></script>
+<script src="http://localhost:4000/js/init.js"></script>
+<script src="http://localhost:4000/js/page.js"></script>
+
+    <main>
+        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        var jssor_1_options = {
+          $AutoPlay: true,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*responsive code begin*/
+        /*you can remove responsive code if you don't want the slider scales while window resizing*/
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 1920);
+                jssor_1_slider.$ScaleWidth(refSize);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        /*responsive code end*/
+    });
+</script>
+<style>
+    /* jssor slider bullet navigator skin 05 css */
+    /*
+    .jssorb05 div           (normal)
+    .jssorb05 div:hover     (normal mouseover)
+    .jssorb05 .av           (active)
+    .jssorb05 .av:hover     (active mouseover)
+    .jssorb05 .dn           (mousedown)
+    */
+    .jssorb05 {
+        position: absolute;
+    }
+    .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 16px;
+        height: 16px;
+        background: url('img/b05.png') no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .jssorb05 div { background-position: -7px -7px; }
+    .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+    .jssorb05 .av { background-position: -67px -7px; }
+    .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+    /* jssor slider arrow navigator skin 22 css */
+    /*
+    .jssora22l                  (normal)
+    .jssora22r                  (normal)
+    .jssora22l:hover            (normal mouseover)
+    .jssora22r:hover            (normal mouseover)
+    .jssora22l.jssora22ldn      (mousedown)
+    .jssora22r.jssora22rdn      (mousedown)
+    .jssora22l.jssora22lds      (disabled)
+    .jssora22r.jssora22rds      (disabled)
+    */
+    .jssora22l, .jssora22r {
+        display: block;
+        position: absolute;
+        /* size of arrow element */
+        width: 40px;
+        height: 58px;
+        cursor: pointer;
+        background: url('img/a22.png') center center no-repeat;
+        overflow: hidden;
+    }
+    .jssora22l { background-position: -10px -31px; }
+    .jssora22r { background-position: -70px -31px; }
+    .jssora22l:hover { background-position: -130px -31px; }
+    .jssora22r:hover { background-position: -190px -31px; }
+    .jssora22l.jssora22ldn { background-position: -250px -31px; }
+    .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+    .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+</style>
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+    <!-- Loading Screen -->
+    <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+        <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+    </div>
+    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+        <div>
+            <img data-u="image" src="img/red.jpg" />
+            <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
+            <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+        </div>
+        <div>
+            <img data-u="image" src="img/purple.jpg" />
+        </div>
+        <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+        <div>
+            <img data-u="image" src="img/blue.jpg" />
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+        <!-- bullet navigator item prototype -->
+        <div data-u="prototype" style="width:16px;height:16px;"></div>
+    </div>
+    <!-- Arrow Navigator -->
+    <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+</div>
+
+    </main>
+  </body>
+<footer class="page-footer">
+<div class="container">
+  <div class="row">
+    <div class="col m2 s4 offset-s4 offset-m5">
+      <img class="footer-image"src="img/wekreative_transCHARCOAL.png" alt="" width="70%">
+    </div>
+    <div class="col s12">
+      <p class="center uppercase"><a class="black-text text-lighten-3" href="#home">Home</a> | <a class="black-text text-lighten-3" href="#work">Work</a> | <a class="black-text text-lighten-3" href="#about">About</a> | <a class="black-text text-lighten-3" href="#contact">Contact</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright">
+  <div class="container black-text uppercase center">
+  © 2017 Wekreative
+  </div>
+</div>
+</footer>
+
+</html>
