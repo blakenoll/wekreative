@@ -2,6 +2,7 @@
 ---
 
 @import 'materialize';
+@import 'image-slider';
 
 $gold: #ffce31;
 $charcoal: #161616;
@@ -12,6 +13,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #EAEAEA;
 }
 
 main {
@@ -20,15 +22,18 @@ main {
 
 footer.page-footer {
   color: #000;
-  background-color: #EAEAEA;
+  background-color: transparent;
+  .footer-copyright {
+    background-color: transparent;
+  }
 }
 
 #nav-logo {
   width: 150px;
 }
 
-#home a {
-  color: $white;
+#home * {
+  color: $charcoal;
 }
 
 #portfolio img {
@@ -64,6 +69,7 @@ footer.page-footer {
 
 #grey-row {
   margin-bottom: 0px;
+  max-width: 1200px;
 }
 
 .get-kreative {
@@ -82,6 +88,7 @@ img.top:hover {
 
 .icon-row {
   margin-bottom: 0px;
+  max-width: 1200px;
 }
 
 .uppercase {
@@ -94,6 +101,9 @@ img.top:hover {
 
 .parallax-top {
   position: fixed;
+  video {
+    width: 100%;
+  }
 }
 
 .card {
@@ -143,10 +153,6 @@ img.top:hover {
 
 .bold {
   font-weight: bold;
-}
-
-footer.page-footer .footer-copyright {
-  background-color: #EAEAEA;
 }
 
 .footer-image {

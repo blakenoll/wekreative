@@ -50,12 +50,6 @@
         ga('send', 'pageview');
       </script>
     
-    <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="http://localhost:4000/js/materialize.min.js"></script>
-<script src="http://localhost:4000/js/init.js"></script>
-<script src="http://localhost:4000/js/page.js"></script>
-
     <main>
         <div id="menu" class="navbar-fixed">
 <nav>
@@ -80,10 +74,11 @@
 
 <div class="parallax-container">
     <div class="parallax parallax-top">
-    <video webkit-playsinline autoplay loop muted poster="img/waves.png">
+      <!-- <img src="http://localhost:4000/img/Unknown.png" alt=""> -->
+    <!-- <video webkit-playsinline autoplay loop muted poster="img/waves.png">
       <source src="https://player.vimeo.com/external/206480099.hd.mp4?s=bddd06aea65e4277614b7ad420af11a62748f410&profile_id=119" type="video/mp4">
       <img src="img/waves.png" alt="">
-    </video>
+    </video> -->
     </div>
     <div  id="home" class="row section scrollspy">
     <div class="container">
@@ -91,29 +86,30 @@
       <div class="col s12 l8 offset-l2">
       <div class="row valign-wrapper">
         <div class="col s3 center">
-          <h5 class="white-text center-align valign uppercase"><a href="#">Home</a></h5>
+          <h5 class="center-align valign uppercase"><a href="#">Home</a></h5>
         </div>
         <div class="col s3 center">
-          <h5 class="white-text center-align valign uppercase"><a href="#work">Work</a></h5>
+          <h5 class="center-align valign uppercase"><a href="#work">Work</a></h5>
         </div>
         <div class="col s4">
           <img class="center-align valign" src="http://localhost:4000/img/wekreative_transGOLD.png" alt="" width="100%">
         </div>
         <div class="col s3 center">
-          <h5 class="white-text center-align valign uppercase"><a href="#about">About</a></h5>
+          <h5 class="center-align valign uppercase"><a href="#about">About</a></h5>
         </div>
         <div class="col s3 center">
-          <h5 class="white-text  valign uppercase"><a href="#contact">Contact</a></h5>
+          <h5 class="valign uppercase"><a href="#contact">Contact</a></h5>
         </div>
       </div>
       </div>
       <div class="col s12 l8 offset-l2">
-        <h1 id="header-name" class="center white-text uppercase">Wekreative Design Group</h1>
-        <h3 id="header-text" class="center white-text" style="letter-spacing: 2px; font-size: 1.5rem"><i>your team of marketing experts</i></h3>
+        <h1 id="header-name" class="center uppercase">Wekreative Design Group</h1>
+        <h3 id="header-text" class="center" style="letter-spacing: 2px; font-size: 1.5rem"><i>your team of marketing experts</i></h3>
       </div>
      </div>
     </div>
 </div>
+
 <div class="section white get-kreative">
 <div id="work" class="section scrollspy get-kreative">
   <div class="black" style="background-color: #161616;">
@@ -172,6 +168,52 @@
   </div>
   </div>
 </div>
+
+
+<div class="white">
+  <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+      <!-- Loading Screen -->
+      <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+          <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+          <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+      </div>
+      <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+          <div>
+              <img data-u="image" src="http://localhost:4000/img/WKupdated_Work.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work2.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work3.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work4.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work5.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work6.jpg" />
+          </div>
+          <div>
+              <img data-u="image" src="/img/WKupdated_Work7.jpg" />
+          </div>
+      </div>
+
+      <!-- Arrow Navigator -->
+      <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+      <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+  </div>
+</div>
+
+<div id="about" class="parallax-container valign-wrapper section scrollspy" style="background-color: #161616; height: auto;">
+  <div class="parallax">
+  </div>
+  <div class="container">
+    <p class="center white-text valign flow-text"><b>WEKREATIVE</b> is a full-service marketing firm providing creative solutions for businesses and organizations around the globe.  Nothing is more exciting to our team than coming alongside a group of people to  help identify what makes them unique, and then helping them share that story through multiple mediums.  Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity.  <b>WEKREATIVE</b> specializes in pushing the status quo and creating awe-inspired results.</p>
+  </div>
+</div>
 <div id="grey" class="section">
   <div id="grey-row" class="row">
     <div class="col s6 m3">
@@ -220,14 +262,7 @@
     </div>
   </div>
 </div>
-<div id="about" class="parallax-container valign-wrapper section scrollspy" style="background-color: #161616; height: auto;">
-  <div class="parallax">
-  </div>
-  <div class="container">
-    <p class="center white-text valign flow-text"><b>WEKREATIVE</b> is a full-service marketing firm providing creative solutions for businesses and organizations around the globe.  Nothing is more exciting to our team than coming alongside a group of people to  help identify what makes them unique, and then helping them share that story through multiple mediums.  Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity.  <b>WEKREATIVE</b> specializes in pushing the status quo and creating awe-inspired results.</p>
-  </div>
-</div>
-</div>
+
 <div id="contact" class="section scrollspy white">
   <div class="row container">
     <div class="section">
@@ -254,8 +289,9 @@
               <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
               <label for="textarea1">Message</label>
             </div>
-            <button class="btn-flat waves-effect waves-light right" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
+            <button class="btn-flat waves-effect waves-light right" type="submit" name="action">
+              <span><i class="material-icons right">send</i> Submit</span>
+
             </button>
           </div>
         </form>
@@ -267,6 +303,12 @@
 
     </main>
   </body>
+  <!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://localhost:4000/js/materialize.min.js"></script>
+<script src="http://localhost:4000/js/jssor.slider-22.2.8.mini.js" type="text/javascript"></script>
+<script src="http://localhost:4000/js/page.js"></script>
+
 <footer class="page-footer">
 <div class="container">
   <div class="row">
