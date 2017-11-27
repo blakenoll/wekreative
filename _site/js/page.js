@@ -21,7 +21,7 @@ $(function () {
 
              // set distance user needs to scroll before we start fadeIn
         if ($(this).scrollTop() > 400) {
-            $('#menu').fadeIn(550);
+            $('#menu').fadeIn(550).css("display", "initial");
         } else {
             $('#menu').fadeOut(300);
         }
