@@ -3,7 +3,7 @@ title: wekreative
 email: hello@wekreative.com
 description: WEKREATIVE is a full-service marketing firm providing creative solutions for businesses and organization around the globe. Nothing is more exciting to our team than coming alongside a group of people to help identify what makes them unique, and then helping them share that story through multiple mediums. Regardless of the stage of the organization — proper identification, development and execution of their message is the key to success and longevity. WEKREATIVE specializes in pushing the status quo and creating awe-inspired results.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://wekreative.com
+url: https://wekreative.com
 twitter_username: jekyllrb
 github_username:  jekyll
 google_analytics: UA-92996307-1

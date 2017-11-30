@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="canonical" href="{{ page.redirect_to }}"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+<meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
+<title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="author" content="{{ site.name }}">
+<meta name="description" content="{{ site.description }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.default_img }}{% endif %}">
+<meta property="og:type" content="blog">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+<meta name="twitter:site" content="{{ site.title }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:domain" content="{{ site.url }}">
+<meta property="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.default_img }}{% endif %}">
+<!-- Fonts and Icons -->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+<!-- main css -->
+<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="shortcut icon" type="image/png" href="{{ '/favicon.png'  | prepend: site.url }}">
+</head>
+<body>
+
+      <!-- <a href="{{ page.redirect_to }}">Click here if you are not redirected.<a> -->
+      <script>location='{{ page.redirect_to }}'</script>
+</body>
+</html>
