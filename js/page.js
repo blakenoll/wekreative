@@ -1,35 +1,29 @@
 
 $(document).ready(function(){
-
   $('.parallax').parallax();
   $('.scrollspy').scrollSpy();
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.button-collapse').sideNav();
-
 });
 
 // navbar reveal on scroll controls
-(function ($) {
+
 $(document).ready(function(){
 
 // hide .navbar first
 $('#menu').hide();
 
 // fade in .navbar
-$(function () {
-    $(window).scroll(function () {
-
-             // set distance user needs to scroll before we start fadeIn
-        if ($(this).scrollTop() > 400) {
-            $('#menu').fadeIn(550).css("display", "initial");
-        } else {
-            $('#menu').fadeOut(300);
-        }
-    });
+  $(window).scroll(function () {
+      // set distance user needs to scroll before fadeIn
+      if ($(this).scrollTop() > 400) {
+          $('#menu').fadeIn(550).css("display", "inherit");
+      } else {
+          $('#menu').fadeOut(300);
+      }
+  });
 });
 
-});
-}(jQuery));
 
 jQuery(document).ready(function ($) {
 

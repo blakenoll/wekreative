@@ -99,6 +99,16 @@ img.top:hover {
   height: auto;
 }
 
+.header-bg {
+  background: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 10px,
+    #EAEAEA 10px,
+    #EAEAEA 20px
+  );
+}
+
 .parallax-top {
   position: fixed;
   video {
